@@ -1,5 +1,5 @@
-/* App Defense servis işçisi — sürüm 26bb1151418d (pwa-kur.js üretir; elle düzenleme) */
-const ONBELLEK = "appdefence-26bb1151418d";
+/* App Defense servis işçisi — sürüm e11f2794ae7e (pwa-kur.js üretir; elle düzenleme) */
+const ONBELLEK = "appdefence-e11f2794ae7e";
 const AG_ONCE = ["./", "index.html", "kasa.json", "oyun.bin"];
 const DOSYALAR = AG_ONCE.concat(["manifest.webmanifest", "ikon-180.png", "ikon-192.png", "ikon-512.png", "ikon-maskable-512.png"]);
 self.addEventListener("install", e => { e.waitUntil(caches.open(ONBELLEK).then(c => c.addAll(DOSYALAR)).then(() => self.skipWaiting())); });
